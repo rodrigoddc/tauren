@@ -2,201 +2,123 @@
 {% load static %}
 
 {% block main %}
-<body class="home">
+<style>
+html {
+	scroll-behavior: smooth;
+}
+body{
+	font-family: 'Montserrat', sans-serif;
 
-	<!-- Wrapper Site -->
-	<div id="main-content">
+}
+.col-md-4.bg-white{
+	margin-top: 30vh;
+	margin-left: 1.5rem;
+	text-align: right;
+}.col-sm-12{
+	text-align: left;
+}
+</style>
+<body>
 
-		<!-- Preload -->
-		<div id="preload">
-			<div class="kd-bounce">
-				<div></div>
-				<div></div>
-			</div>
-		</div>
-		<!-- Preload -->
+<!-- Wrapper Site -->
+<div id="main">
 
-		<!-- Mobile Menu -->
-		<div class="mobile">
-			<div class="container">
-				<!-- Mobile -->
-				<div class="menu-mobile">
-					<span class="item item-1"></span>
-					<span class="item item-2"></span>
-					<span class="item item-3"></span>
-				</div>
-				<!-- End Mobile -->
+	<!-- Preload -->
+	<div id="">
 
-				<!-- Logo -->
-				<div class="logo">
-					<a href="index.html">Tauren</a>
-				</div>
-				<!-- End Logo -->
-			</div>
-		</div>
-		<div class="hide-menu"></div>
-		<!-- End Mobile Menu -->
-
-		<div class="container">
-			<div class="row">
-
-				<div class="col-md-3">
-					<div class="header affix">
-						<div class="table">
-							<div class="table-cell">
-								<!-- Logo -->
-								<div class="logo">
-									<a href="index.html">Tauren</a>
-								</div>
-								<!-- End Logo -->
-
-								{% include 'core/navbar.html' %}
-
-								<!-- Socials -->
-								<div class="socials">
-									<a href="#" title="Whatsapp">
-                                        <i class="fab fa-2x fa-whatsapp"></i>
-									</a>
-<!--									<a href="#" title="Pesquise no site">-->
-<!--										<i class="fa fa-2x fa-search"></i>-->
-<!--									</a>-->
-<!--								</div>-->
-<!--								<div class="box-search">-->
-<!--									<div class="table">-->
-<!--										<div class="table-cell">-->
-<!--											<div class="container">-->
-<!--												<form class="search-form" action="#" method="get">-->
-<!--													<input type="search" name="s" class="search-field" placeholder="Type &amp; hit enter" value="" title="Search">-->
-<!--													<div class="kd-close">-->
-<!--													</div>-->
-<!--												</form>-->
-<!--											</div>-->
-<!--										</div>-->
-<!--									</div>-->
-								</div>
-								<!-- End Socials -->
-
-								<div class="copyright" style="margin-top: 1em;">
-									<p>
-										Tauren @ 2019. Design by Rodrigo Delfino
-									</p>
-								</div>
-
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-9 col-md-offset-3">
-					<div class="projects">
-						<div class="tiled-gallery justified-gallery" style="height: 1696.51px;">
-							<div class="project-item jg-entry entry-visible" style="width: 286px; height: 381.333px; top: 6px; left: 6px;">
-								<a href="single-project.html">
-									<img src="images/projects/1.jpg" alt="" style="width: 286px; height: 382px; margin-left: -143px; margin-top: -191px;">
-								</a>
-								<h2 class="title">
-									<a href="#">Emotions</a>
-								</h2>
-							</div>
-
-							<div class="project-item jg-entry entry-visible" style="width: 286px; height: 381.333px; top: 6px; left: 298px;">
-								<a href="single-project.html">
-									<img src="images/projects/2.jpg" alt="" style="width: 286px; height: 382px; margin-left: -143px; margin-top: -191px;">
-								</a>
-								<h2 class="title">
-									<a href="#">Mountain</a>
-								</h2>
-							</div>
-
-							<div class="project-item jg-entry entry-visible" style="width: 578px; height: 385.333px; top: 393.333px; left: 6px;">
-								<a href="single-project.html">
-									<img src="images/projects/3.jpg" alt="" style="width: 578px; height: 386px; margin-left: -289px; margin-top: -193px;">
-								</a>
-								<h2 class="title">
-									<a href="#">Interface</a>
-								</h2>
-							</div>
-
-							<div class="project-item jg-entry entry-visible" style="width: 376px; height: 250.851px; top: 784.667px; left: 6px;">
-								<a href="single-project.html">
-									<img src="images/projects/4.jpg" alt="" style="width: 376px; height: 251px; margin-left: -188px; margin-top: -125.5px;">
-								</a>
-								<h2 class="title">
-									<a href="#">Transportation</a>
-								</h2>
-							</div>
-
-							<div class="project-item jg-entry entry-visible" style="width: 196px; height: 250.851px; top: 784.667px; left: 388px;">
-								<a href="single-project.html">
-									<img src="images/projects/5.jpg" alt="" style="width: 196px; height: 251px; margin-left: -98px; margin-top: -125.5px;">
-								</a>
-								<h2 class="title">
-									<a href="#">Perspective</a>
-								</h2>
-							</div>
-
-							<div class="project-item jg-entry entry-visible" style="width: 235px; height: 234.537px; top: 1041.52px; left: 6px;">
-								<a href="single-project.html">
-									<img src="images/projects/6.jpg" alt="" style="width: 235px; height: 235px; margin-left: -117.5px; margin-top: -117.5px;">
-								</a>
-								<h2 class="title">
-									<a href="#">Mixilicious</a>
-								</h2>
-							</div>
-
-							<div class="project-item jg-entry entry-visible" style="width: 337px; height: 234.537px; top: 1041.52px; left: 247px;">
-								<a href="single-project.html">
-									<img src="images/projects/7.jpg" alt="" style="width: 337px; height: 235px; margin-left: -168.5px; margin-top: -117.5px;">
-								</a>
-								<h2 class="title">
-									<a href="#">Creative</a>
-								</h2>
-							</div>
-
-							<div class="project-item jg-entry entry-visible" style="width: 578px; height: 408.453px; top: 1282.05px; left: 6px;">
-								<a href="single-project.html">
-									<img src="images/projects/8.jpg" alt="" style="width: 578px; height: 409px; margin-left: -289px; margin-top: -204.5px;">
-								</a>
-								<h2 class="title">
-									<a href="#">Stapler</a>
-								</h2>
-							</div>
-						</div>
-					</div>
-
-					<!-- Pagination -->
-					<div class="pagination-wrap">
-						<ul>
-							<li>
-								<a class="prev page-numbers" href="#">
-									<i class="fa fa-long-arrow-left"></i>
-								</a>
-							</li>
-							<li>
-								<a class="page-numbers" href="#">1</a>
-							</li>
-							<li>
-								<span class="page-numbers current">2</span>
-							</li>
-							<li>
-								<a class="page-numbers" href="#">3</a>
-							</li>
-							<li>
-								<a class="page-numbers" href="#">4</a>
-							</li>
-							<li>
-								<a class="next page-numbers" href="#">
-									<i class="fa fa-long-arrow-right"></i>
-								</a>
-							</li>
-						</ul>
-
-					</div>
-					<!-- End Pagination -->
-				</div>
-		</div>
 	</div>
-	<!-- End Wrapper Site -->
-{% endblock %}
+	<!-- end Preload -->
 
-{% include 'core/footer.html' %}
+	<div class="container">
+		<div class="row">
+
+			<!-- Wrapper left-->
+			<div class="col-md-4 col-sm-12 bg-white">
+				<div class="bg-white position-sticky fixed-top">
+					<!-- Logo -->
+					<div class="h1 mb-5">
+						<a class="text-dark " href="{% url 'core:home' %}" style="font-family: 'Cinzel', serif;">Tauren</a>
+					</div>
+					<!-- End Logo -->
+
+					{% include 'core/navbar.html' %}
+
+					<!-- Socials -->
+					<div class="mt-5">
+						<a href="" title="Whatsapp">
+							<i class="text-success fab fa-2x fa-whatsapp"></i>
+						</a>
+					</div>
+					<!-- End Socials -->
+
+					<div class="mt-2">
+						<p>
+							Tauren @ 2019. Design by Rodrigo Delfino
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- end Wrapper left-->
+
+			<!-- Content right-->
+			<div class="col-md-6 col-sm-12 ml-4">
+				<div class="container">
+					<div class="text-center">
+
+						<div class="mt-5">
+							<blockquote class="blockquote">
+								<p>
+									<i class="fas fa-quote-left "></i>
+									O que as suas mãos tiverem que fazer, que o façam com toda a sua força, pois na sepultura, para onde você vai, não há atividade nem planejamento, não há conhecimento nem sabedoria.
+								</p>
+								<footer class="blockquote-footer text-left">Eclesiaster 9:10</footer>
+							</blockquote>
+
+						</div>
+
+						<div class="container-fluid">
+							<div class="row text-white">
+								<div class="col-md-6">
+									<img class="card-img" src="../static/img/1.jpg" alt="">
+
+									<h4 class="card-img-overlay">
+										<p class="card-text bg-dark">Emotions</p>
+									</h4>
+								</div>
+								<div class="col-md-6">
+									<img class="card-img" src="../static/img/1.jpg" alt="">
+
+									<h4 class="card-img-overlay">
+										<p class="card-text bg-dark">Emotions</a>
+									</h4>
+								</div>
+							</div>
+							<div class="card text-white">
+								<a href="">
+									<img class="card-img" src="../static/img/3.jpg" alt="">
+								</a>
+								<h4 class="card-img-overlay">
+									<p class="card-text bg-dark">Emotions</a>
+								</h4>
+							</div>
+							<div class="card text-white">
+								<a href="">
+									<img class="card-img" src="../static/img/4.jpg" alt="">
+								</a>
+								<h4 class="card-img-overlay">
+									<p class="card-text bg-dark">Emotions</a>
+								</h4>
+							</div>
+						</div>
+					</div>
+					<div id="footer" class="mt-5">
+						{% include 'core/footer.html' %}
+					</div>
+				</div>
+				<!-- End Content righ-->
+			</div>
+		</div>
+		<!-- End Wrapper Site -->
+		{% endblock %}
+
+	</div>

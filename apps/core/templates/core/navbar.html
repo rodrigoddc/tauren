@@ -1,55 +1,26 @@
 <!-- Navigation -->
-								<div class="main-menu">
-									<nav>
-										<ul class="menu-list">
-											<li class="active menu-item-has-children">
-												<a href="index.html">Home</a>
-												<ul class="sub-menu">
-													<li>
-														<a href="index.html">List Layout</a>
-													</li>
-													<li>
-														<a href="index-2.html">Tiled Layout</a>
-													</li>
-													<li>
-														<a href="index-header-text.html">Header Text</a>
-													</li>
-													<li>
-														<a href="index-menu-right.html">Menu Right</a>
-													</li>
-												</ul>
+								<div class="">
+										<nav>
+										<ul class="nav flex-column">
+											<li class="nav-item">
+												<a class="nav-link text-dark" href="{% url 'core:home' %}">Home</a>
 											</li>
-											<li>
-												<a href="#">Branding</a>
+											<li class="nav-item">
+												<a class="nav-link text-dark" href="">A empresa</a>
 											</li>
-											<li>
-												<a href="#">Design</a>
+											<li class="nav-item">
+												<a class="nav-link text-dark" data-toggle="collapse" href="#collapseList" role="button" aria-expanded="false" aria-controls="collapseList">Projetos</a>
+												<div class="collapse" id="collapseList">
+													<div class="nav-item">
+														<a class="nav-link text-dark" href="">Projeto X</a>
+													</div>
+												</div>
 											</li>
-											<li>
-												<a href="#">Identity</a>
+											<li class="nav-item">
+												<a class="nav-link text-dark" href="">Serviços</a>
 											</li>
-											<li>
-												<a href="#">Furniture</a>
-											</li>
-											<li class="menu-item-has-children">
-												<a href="blog.html">Blog</a>
-												<ul class="sub-menu">
-													<li>
-														<a href="about.html">About Me</a>
-													</li>
-													<li>
-														<a href="single.html">Single</a>
-													</li>
-													<li>
-														<a href="single-project.html">Project</a>
-													</li>
-													<li>
-														<a href="404.html">404 Page</a>
-													</li>
-												</ul>
-											</li>
-											<li>
-												<a href="contact.html">Contact</a>
+											<li class="nav-item">
+												<a class="nav-link text-dark" href="#footer">Contate-nos</a>
 											</li>
 										</ul>
 									</nav>
