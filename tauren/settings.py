@@ -30,8 +30,8 @@ DEBUG = config('DEBUG', default=False, cast=bool)
 ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
-    'tauren-gg.herokuapp.com',
-    '.tauren-gg.com.br',
+    'taurem-gg.herokuapp.com',
+    '.taurem-gg.com.br',
 ]
 
 
@@ -133,7 +133,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, *'/static/'),
+    os.path.join(BASE_DIR, 'static/'),
 ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
