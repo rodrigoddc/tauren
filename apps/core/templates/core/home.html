@@ -8,14 +8,36 @@ html {
 }
 body{
 	font-family: 'Montserrat', sans-serif;
-
+	text-align: right!important;
 }
-.col-md-4.bg-white{
-	margin-top: 30vh;
-	margin-left: 1.5rem;
-	text-align: right;
-}.col-sm-12{
-	text-align: left;
+
+@media only screen and (min-width: 768px) {
+	.center-nav{
+		margin-top: 30vh;
+		text-align: right!important;
+
+	}
+	.collapse-menu{
+		margin-top: 3rem!important;
+		align-items: flex-end!important;
+	}
+	.logo{
+		text-align: right!important;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.logo{
+		margin-left: auto!important;
+		margin-right: auto!important;
+	}
+	.merchan{
+		text-align: center!important;
+	}
+}
+
+.bg{
+	background-color: #343a409e
 }
 
 </style>
@@ -34,35 +56,17 @@ body{
 		<div class="row">
 
 			<!-- Wrapper left-->
-			<div class="col-md-4 col-sm-12 bg-white">
-				<div class="bg-white position-sticky fixed-top">
-					<!-- Logo -->
-					<div class="h1 mb-5">
-						<a class="text-dark " href="{% url 'core:home' %}" style="font-family: 'Cinzel', serif;">Tauren</a>
-					</div>
-					<!-- End Logo -->
+			<div class="col-md-5 bg-white center-nav">
+				<div class="position-sticky fixed-top">
 
 					{% include 'core/navbar.html' %}
 
-					<!-- Socials -->
-					<div class="mt-5">
-						<a href="" title="Whatsapp">
-							<i class="text-success fab fa-2x fa-whatsapp"></i>
-						</a>
-					</div>
-					<!-- End Socials -->
-
-					<div class="mt-2">
-						<p>
-							Tauren @ 2019. Design by Rodrigo Delfino
-						</p>
-					</div>
 				</div>
 			</div>
 			<!-- end Wrapper left-->
 
 			<!-- Content right-->
-			<div class="col-md-6 col-sm-12 ml-4">
+			<div class="col-md-6">
 				<div class="container">
 					<div class="text-center">
 
@@ -83,14 +87,14 @@ body{
 									<img class="card-img" src="../static/img/1.jpg" alt="">
 
 									<h4 class="card-img-overlay">
-										<p class="card-text bg-dark">Banana</p>
+										<p class="card-text bg">Banana</p>
 									</h4>
 								</div>
 								<div class="col-md-6">
 									<img class="card-img" src="../static/img/1.jpg" alt="">
 
 									<h4 class="card-img-overlay">
-										<p class="card-text bg-dark">Banana</a>
+										<p class="card-text bg">Banana</p>
 									</h4>
 								</div>
 							</div>
@@ -99,7 +103,7 @@ body{
 									<img class="card-img" src="../static/img/3.jpg" alt="">
 								</a>
 								<h4 class="card-img-overlay">
-									<p class="card-text bg-dark">Banana</a>
+									<p class="card-text bg">Banana</p>
 								</h4>
 							</div>
 							<div class="card text-white">
@@ -107,19 +111,23 @@ body{
 									<img class="card-img" src="../static/img/4.jpg" alt="">
 								</a>
 								<h4 class="card-img-overlay">
-									<p class="card-text bg-dark">Banana</a>
+									<p class="card-text bg">Banana</p>
 								</h4>
 							</div>
 						</div>
 					</div>
-					<div id="footer" class="mt-5">
-						{% include 'core/footer.html' %}
-					</div>
+
+					{% include 'core/footer.html' %}
+
 				</div>
 				<!-- End Content righ-->
 			</div>
 		</div>
 		<!-- End Wrapper Site -->
-		{% endblock %}
 
+		<script type="text/javascript" src="{% static 'js/home.js' %}"></script>
 	</div>
+</div>
+{% endblock %}
+
+

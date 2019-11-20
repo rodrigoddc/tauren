@@ -1,28 +1,50 @@
 <!-- Navigation -->
-								<div class="">
-										<nav>
-										<ul class="nav flex-column">
-											<li class="nav-item">
-												<a class="nav-link text-dark" href="{% url 'core:home' %}">Home</a>
-											</li>
-											<li class="nav-item">
-												<a class="nav-link text-dark" href="">A empresa</a>
-											</li>
-											<li class="nav-item">
-												<a class="nav-link text-dark" data-toggle="collapse" href="#collapseList" role="button" aria-expanded="false" aria-controls="collapseList">Projetos</a>
-												<div class="collapse" id="collapseList">
-													<div class="nav-item">
-														<a class="nav-link text-dark" href="">Projeto X</a>
-													</div>
-												</div>
-											</li>
-											<li class="nav-item">
-												<a class="nav-link text-dark" href="">Serviços</a>
-											</li>
-											<li class="nav-item">
-												<a class="nav-link text-dark" href="#footer">Contate-nos</a>
-											</li>
-										</ul>
-									</nav>
-								</div>
-								<!-- End Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white flex-sm-column">
+
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navCollapse" aria-controls="navCollapse" aria-expanded="false" aria-label="Menu de Navegação">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+
+	<!-- Logo -->
+	<a class="text-dark navbar-brand " href="{% url 'core:home' %}" style="font-family: 'Cinzel', serif;">
+		<span class="logo display-4">Tauren</span>
+	</a>
+	<!-- End Logo -->
+
+	<div class="merchan collapse collapse-menu navbar-collapse flex-sm-column" id="navCollapse">
+		<a class="nav-item nav-link text-dark" href="{% url 'core:home' %}">Home</a>
+
+		<a class="nav-item nav-link text-dark" href="">A empresa</a>
+
+		<a class="nav-item nav-link text-dark" data-toggle="collapse" href="#collapseList" role="button" aria-expanded="false" aria-controls="collapseList">Projetos</a>
+		<div class="collapse" id="collapseList">
+			<div class="nav-item">
+				<a class="nav-item nav-link text-dark" href="">Projeto X</a>
+			</div>
+		</div>
+
+		<a class="nav-item nav-link text-dark" href="">Serviços</a>
+
+		<a class="nav-item nav-link text-dark" href="#footer">Contate-nos</a>
+
+		<!-- merchan-->
+		<div class="merchan">
+			<!-- Socials -->
+			<div class="mt-5">
+				<a href="" title="Whatsapp">
+					<i class="text-success fab fa-2x fa-whatsapp"></i>
+				</a>
+			</div>
+			<!-- End Socials -->
+
+			<!-- desing by-->
+			<div class="mt-2">
+				<p>
+					Tauren @ 2019. Design by Rodrigo Delfino
+				</p>
+			</div>
+			<!-- end design by-->
+		</div>
+		<!-- end merchan-->
+</nav>
+<!-- End Navigation -->
