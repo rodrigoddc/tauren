@@ -30,8 +30,8 @@ DEBUG = config('DEBUG', default=False, cast=bool)
 ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
-    'taurem-gg.herokuapp.com',
-    '.taurem-gg.com.br',
+    'tauren-gg.herokuapp.com',
+    '.tauren.com.br',
 ]
 
 
