@@ -1,0 +1,41 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body{
+	font-family: 'Montserrat', sans-serif;
+	text-align: right!important;
+}
+
+.bg{
+	background-color: #343a409e
+}
+.logo{
+    font-family: 'Cinzel', serif;
+}
+
+@media only screen and (min-width: 768px) {
+	.center-nav{
+		margin-top: 25vh;
+		text-align: right!important;
+
+	}
+	.collapse-menu{
+		margin-top: 3rem!important;
+		align-items: flex-end!important;
+	}
+	.logo{
+		margin-right: 3rem!important;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.logo{
+		margin-left: auto!important;
+		margin-right: auto!important;
+		margin-top: 1rem!important;
+	}
+	.merchan{
+		text-align: center!important;
+	}
+}

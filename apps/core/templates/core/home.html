@@ -2,49 +2,14 @@
 {% load static %}
 
 {% block main %}
-<style>
-html {
-	scroll-behavior: smooth;
-}
-body{
-	font-family: 'Montserrat', sans-serif;
-	text-align: right!important;
-}
 
-@media only screen and (min-width: 768px) {
-	.center-nav{
-		margin-top: 30vh;
-		text-align: right!important;
+<!-- Main Style -->
+<link rel="stylesheet" type="text/css" href="{% static 'core/css/core.css' %}">
 
-	}
-	.collapse-menu{
-		margin-top: 3rem!important;
-		align-items: flex-end!important;
-	}
-	.logo{
-		text-align: right!important;
-	}
-}
-
-@media only screen and (max-width: 768px) {
-	.logo{
-		margin-left: auto!important;
-		margin-right: auto!important;
-	}
-	.merchan{
-		text-align: center!important;
-	}
-}
-
-.bg{
-	background-color: #343a409e
-}
-
-</style>
 <body>
 
 <!-- Wrapper Site -->
-<div id="main">
+<main id="main">
 
 	<!-- Preload -->
 	<div id="">
@@ -56,21 +21,20 @@ body{
 		<div class="row">
 
 			<!-- Wrapper left-->
-			<div class="col-md-5 bg-white center-nav">
+			<section class="col-md-5 bg-white center-nav">
 				<div class="position-sticky fixed-top">
 
 					{% include 'core/navbar.html' %}
 
 				</div>
-			</div>
+			</section>
 			<!-- end Wrapper left-->
 
 			<!-- Content right-->
-			<div class="col-md-6">
-				<div class="container">
+			<section class="col-md-6">
 					<div class="text-center">
 
-						<div class="mt-5">
+						<div class="mt-5 mb-4">
 							<blockquote class="blockquote">
 								<p>
 									<i class="fas fa-quote-left "></i>
@@ -83,51 +47,67 @@ body{
 
 						<div class="container-fluid">
 							<div class="row text-white">
-								<div class="col-md-6">
-									<img class="card-img" src="../static/img/1.jpg" alt="">
+								<div class="card-deck">
+									<div class="col-md-6 p-0">
+										<fieldset class="card border-0">
+											<figure>
+												<img class="card-img" src="{% static 'core/img/1.jpg' %}" alt="">
+											</figure>
+											<div class="card-img-overlay">
+												<div class="card-title h5">
+													<figcaption class="card-text bg">Banana</figcaption>
+												</div>
+											</div>
+										</fieldset>
+									</div>
+									<div class="col-md-6 p-0">
+										<fieldset class="card border-0">
+											<figure>
+												<img class="card-img" src="{% static 'core/img/8.jpg' %}" alt="">
+											</figure>
 
-									<h4 class="card-img-overlay">
-										<p class="card-text bg">Banana</p>
-									</h4>
+											<div class="card-img-overlay">
+												<div class="card-title h5">
+													<figcaption class="card-text bg">Banana</figcaption>
+												</div>
+											</div>
+										</fieldset>
+									</div>
 								</div>
-								<div class="col-md-6">
-									<img class="card-img" src="../static/img/1.jpg" alt="">
-
-									<h4 class="card-img-overlay">
-										<p class="card-text bg">Banana</p>
-									</h4>
-								</div>
-							</div>
-							<div class="card text-white">
-								<a href="">
-									<img class="card-img" src="../static/img/3.jpg" alt="">
-								</a>
-								<h4 class="card-img-overlay">
-									<p class="card-text bg">Banana</p>
-								</h4>
-							</div>
-							<div class="card text-white">
-								<a href="">
-									<img class="card-img" src="../static/img/4.jpg" alt="">
-								</a>
-								<h4 class="card-img-overlay">
-									<p class="card-text bg">Banana</p>
-								</h4>
+								<fieldset class="card border-0 text-white">
+									<figure>
+										<img class="card-img" src="{% static 'core/img/4.jpg' %}" alt="">
+									</figure>
+									<div class="card-img-overlay">
+										<div class="card-title h5">
+											<figcaption class="card-text bg">Banana</figcaption>
+										</div>
+									</div>
+								</fieldset>
+								<fieldset class="card border-0 text-white">
+									<figure>
+										<img class="card-img" src="{% static 'core/img/3.jpg' %}" alt="">
+									</figure>
+									<div class="card-img-overlay">
+										<div class="card-title h5">
+											<figcaption class="card-text bg">Banana</figcaption>
+										</div>
+									</div>
+								</fieldset>
 							</div>
 						</div>
 					</div>
 
 					{% include 'core/footer.html' %}
 
-				</div>
 				<!-- End Content righ-->
-			</div>
+			</section>
 		</div>
 		<!-- End Wrapper Site -->
 
-		<script type="text/javascript" src="{% static 'js/home.js' %}"></script>
+		<script type="text/javascript" src="{% static 'core/js/home.js' %}"></script>
 	</div>
-</div>
+</main>
 {% endblock %}
 
 

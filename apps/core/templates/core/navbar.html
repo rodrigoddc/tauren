@@ -1,13 +1,13 @@
 <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white flex-sm-column">
+<nav class="navbar d-flex navbar-expand-lg navbar-light bg-white flex-sm-column">
 
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navCollapse" aria-controls="navCollapse" aria-expanded="false" aria-label="Menu de Navegação">
 		<span class="navbar-toggler-icon"></span>
 	</button>
 
 	<!-- Logo -->
-	<a class="text-dark navbar-brand " href="{% url 'core:home' %}" style="font-family: 'Cinzel', serif;">
-		<span class="logo display-4">Tauren</span>
+	<a class="ml-auto navbar-brand logo" href="{% url 'core:home' %}">
+		<h1 class="text-dark">Tauren</h1>
 	</a>
 	<!-- End Logo -->
 
@@ -18,8 +18,10 @@
 
 		<a class="nav-item nav-link text-dark" data-toggle="collapse" href="#collapseList" role="button" aria-expanded="false" aria-controls="collapseList">Projetos</a>
 		<div class="collapse" id="collapseList">
-			<div class="nav-item">
-				<a class="nav-item nav-link text-dark" href="">Projeto X</a>
+			<div style="font-size: 0.8rem">
+				<a class="nav-item nav-link text-dark" href=""><strong>Projeto X</strong></a>
+				<a class="nav-item nav-link text-dark" href=""><strong>Projeto Y</strong></a>
+				<a class="nav-item nav-link text-dark" href=""><strong>Projeto Z</strong></a>
 			</div>
 		</div>
 
@@ -46,5 +48,7 @@
 			<!-- end design by-->
 		</div>
 		<!-- end merchan-->
+	</div>
+
 </nav>
 <!-- End Navigation -->
